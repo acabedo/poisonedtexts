@@ -3,11 +3,9 @@
 
 # Brief description
 
-# Video tutorial
+# Video tutorial 
 
-<iframe width="420" height="315"
-src="https://youtu.be/rPq5sKLoDb8">
-</iframe>
+https://youtu.be/rPq5sKLoDb8
 
 # Online demo
 
