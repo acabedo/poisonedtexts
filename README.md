@@ -3,6 +3,10 @@
 
 # Brief description
 
+# Online demo
+
+# Sample reports generated
+
 # Requirements 
 
 ## R versions
