@@ -1,3 +1,3 @@
 # Poisoned texts
 
-<img src="images/poisoned_logo-png" alt="drawing" width="160"/> 
+<img src="images/poisoned-logo.png" alt="drawing" width="160"/> 
