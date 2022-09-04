@@ -89,33 +89,6 @@ Recalculating_. R package version 1.0.0,
 <https://CRAN.R-project.org/package=shinycssloaders>.
 
 [[11]]
-Hothorn T, Hornik K, Zeileis A (2006). “Unbiased
-Recursive Partitioning: A Conditional Inference
-Framework.” _Journal of Computational and Graphical
-Statistics_, *15*(3), 651-674.
-
-Zeileis A, Hothorn T, Hornik K (2008). “Model-Based
-Recursive Partitioning.” _Journal of Computational
-and Graphical Statistics_, *17*(2), 492-514.
-
-Hothorn T, Buehlmann P, Dudoit S, Molinaro A, Van
-Der Laan M (2006). “Survival Ensembles.”
-_Biostatistics_, *7*(3), 355-373.
-
-Strobl C, Boulesteix A, Zeileis A, Hothorn T
-(2007). “Bias in Random Forest Variable Importance
-Measures: Illustrations, Sources and a Solution.”
-_BMC Bioinformatics_, *8*(25).
-doi:10.1186/1471-2105-8-25
-<https://doi.org/10.1186/1471-2105-8-25>.
-
-Strobl C, Boulesteix A, Kneib T, Augustin T,
-Zeileis A (2008). “Conditional Variable Importance
-for Random Forests.” _BMC Bioinformatics_,
-*9*(307). doi:10.1186/1471-2105-9-307
-<https://doi.org/10.1186/1471-2105-9-307>.
-
-[[12]]
 Sievert C (2020). _Interactive Web-Based Data
 Visualization with R, plotly, and shiny_. Chapman
 and Hall/CRC. ISBN 9781138331457,
