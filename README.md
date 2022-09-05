@@ -10,7 +10,7 @@ Cabedo, A. (2022). Poisoned texts. v.1.0 (beta). Available at https://github.com
 
 # Special mention and acknowledgments
 
-Part of speech tagging is a mandatory input for Poisoned texts. That input won't be possible without the aid of UdPipe Package (Wijffels 2022) and available at https://github.com/bnosac/udpipe. 
+Part of speech tagging is a mandatory input for Poisoned texts. That input won't be possible without the aid of UdPipe Package (Wijffels 2022), available at https://github.com/bnosac/udpipe. In addition, the benefit of using Udpipe is that Posioned texts can cover a bunch of different languages in order to observe possible similarities among texts. By now, the selecting options are Spanish, Catalan, English, Italian, German, French, Portuguese and Chinese (this last one only in an experimental state); another languages can also be integrated with a very little modification of the app.
 
 # Video tutorial
 
@@ -143,7 +143,7 @@ and Hall/CRC. ISBN 9781138331457,
 
 # Inspirational work
 
-Poisoned texts, as a very basic verbatim plagiarism detection tool, follows some of the rules developed by David Wools in Copycatch, version from 2003. Furthermore, the kind of ngrams treatment developed by Laurence Anthony in Antconc was considered a good trick to find verbatim coincidence and similarity among texts. Finally, the heatmap usage was previously introduced in other text tools, like Oralstats [https://github.com/acabedo/oralstats] 
+Poisoned texts, as a very basic verbatim plagiarism detection tool, follows some of the rules developed by David Wools in Copycatch, version from 2003. Furthermore, the kind of ngrams treatment developed by Laurence Anthony in Antconc was considered a good trick to find verbatim coincidence and similarity among texts. Finally, the heatmap has been previously introduced and tested in other exploratory tools, like Oralstats [https://github.com/acabedo/oralstats] 
 
 # Caution
 
