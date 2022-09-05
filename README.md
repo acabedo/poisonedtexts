@@ -8,7 +8,7 @@
 >You're poison |
 I don't want to break these chains
 
-(*Poison*, 1989 song released on the album *Trash*, by Alice Cooper)
+(<a href="https://www.youtube.com/watch?v=Qq4j1LtCdww">Poison</a>, 1989 song released on the album *Trash*, by Alice Cooper)
 
 # Brief description
 
