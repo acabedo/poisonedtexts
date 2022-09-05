@@ -28,7 +28,7 @@ The most recent version can be downloaded from https://github.com/acabedo/poison
 
 # Special mention and acknowledgments
 
-Part of speech tagging is a mandatory input for Poisoned texts. That input wouldn't be possible without the aid of UdPipe R Package (Wijffels 2022), available at https://github.com/bnosac/udpipe. In addition, the benefit of using Udpipe is that Poisoned texts can cover a bunch of different languages. By now, Poisoned Texts allows the selection of Spanish, Catalan, English, Italian, German, French, Portuguese and Chinese (this last one only in an experimental state); another languages can also be integrated with a very little modification of the app (UdPipe includes the option to access a really big number of different treebanks).
+Part of speech tagging is a mandatory input for Poisoned texts. That input wouldn't be possible without the aid of **UdPipe R Package** (Wijffels 2022), available at https://github.com/bnosac/udpipe. In addition, the benefit of using Udpipe is that Poisoned texts can cover a bunch of different languages. By now, Poisoned Texts allows the selection of Spanish, Catalan, English, Italian, German, French, Portuguese and Chinese (this last one only in an experimental state); another languages can also be integrated with a very little modification of the app (UdPipe includes the option to access a really big number of different treebanks).
 
 # Video tutorial
 
