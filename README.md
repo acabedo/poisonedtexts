@@ -1,5 +1,15 @@
 <img src="images/poisoned-logo.png" alt="drawing" width="160"/> 
 
+>I wanna love you but I better not touch (don't touch) |
+>I wanna hold you, but my senses tell me to stop |
+>I wanna kiss you but I want it too much (too much) |
+>I wanna taste you but your lips are venomous poison |
+>You're poison, running through my veins |
+>You're poison |
+I don't want to break these chains
+
+(*Poison*, 1989 song released on the album *Trash*, by Alice Cooper)
+
 # Brief description
 
 # Citation
