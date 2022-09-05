@@ -16,11 +16,13 @@ Poisoned texts v.1.0 (beta) is a complete free app developed with R language, an
 
 In addition, taking the lexical and part of speech tagging information, there can be also observed common patterns for the authors of the texts (quantity of verbs, nouns, adjectives...), i.e. the style of the authors. Even on the finding of coincidences, this approach could let the expert decide if any of the authors checked could have better writing skills than the others. A heatmap chart, projecting at the same time the discourse styles of the multiple analyzed texts, improves the visualization.
 
-# Citation
+# Citation and contact
 
 At this moment, you can reference Poisoned texts this way:
 
 Cabedo, A. (2022). Poisoned texts. v.1.0 (beta). Available at https://github.com/acabedo/poisonedtexts
+
+If you have any comment or suggestion about this program (or maybe if you detect any error [which is very likely]), just send me a message (adrian.cabedo@uv.es).
 
 # Download and install
 
