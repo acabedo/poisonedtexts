@@ -22,9 +22,13 @@ At this moment, you can reference Poisoned texts this way:
 
 Cabedo, A. (2022). Poisoned texts. v.1.0 (beta). Available at https://github.com/acabedo/poisonedtexts
 
+# Download and install
+
+The most recent version can be downloaded from https://github.com/acabedo/poisonedtexts/tree/main/core. You can execute *app.R* on your own local environment, just take into account that if you want to generate report files, you will need to copy *Poisoned.Rmd* on the same folder. In addition, to add the logo, this must be also uploaded to the same folder where *app.R* is located.
+
 # Special mention and acknowledgments
 
-Part of speech tagging is a mandatory input for Poisoned texts. That input wouldn't be possible without the aid of UdPipe R Package (Wijffels 2022), available at https://github.com/bnosac/udpipe. In addition, the benefit of using Udpipe is that Poisoned texts can cover a bunch of different languages. By now, the selecting options are Spanish, Catalan, English, Italian, German, French, Portuguese and Chinese (this last one only in an experimental state); another languages can also be integrated with a very little modification of the app.
+Part of speech tagging is a mandatory input for Poisoned texts. That input wouldn't be possible without the aid of UdPipe R Package (Wijffels 2022), available at https://github.com/bnosac/udpipe. In addition, the benefit of using Udpipe is that Poisoned texts can cover a bunch of different languages. By now, Poisoned Texts allows the selection of Spanish, Catalan, English, Italian, German, French, Portuguese and Chinese (this last one only in an experimental state); another languages can also be integrated with a very little modification of the app (UdPipe includes the option to access a really big number of different treebanks).
 
 # Video tutorial
 
