@@ -115,6 +115,28 @@ and Hall/CRC. ISBN 9781138331457,
 
 # Screenshots
 
+<img src="images/filevsfile.png" alt="drawing"/> 
+<img src="images/summaries.png" alt="drawing"/> 
+<img src="images/tokens.png" alt="drawing"/> 
+<img src="images/upos.png" alt="drawing"/> 
+<img src="images/ngrams.png" alt="drawing"/>
+<img src="images/matrix.png" alt="drawing"/>
+<img src="images/coincidence.png" alt="drawing"/> 
+<img src="images/styling.png" alt="drawing"/> 
+<img src="images/html.png" alt="drawing" /> 
+<img src="images/pdf.png" alt="drawing"/> 
+<img src="images/docx.png" alt="drawing"/> 
+
+
+
+
+
+
+
+
+
+
+
 # Inspirational work
 
 Poisoned texts, as a very basic verbatim plagiarism detection tool, follows some of the rules developed by David Wools in Copycatch, version from 2003. Furthermore, the kind of ngrams treatment developed by Laurence Anthony in Antconc was considered a good trick to find verbatim coincidence and similarity among texts. Finally, the heatmap usage was previously introduced in other text tools, like Oralstats [https://github.com/acabedo/oralstats] 
