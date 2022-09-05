@@ -8,6 +8,10 @@ At this moment, you can reference Poisoned texts this way:
 
 Cabedo, A. (2022). Poisoned texts. v.1.0 (beta). Available at https://github.com/acabedo/poisonedtexts
 
+# Special mention and acknowledgments
+
+Part of speech tagging is a mandatory input for Poisoned texts. That input won't be possible without the aid of UdPipe Package (Wijffels 2022) and available at https://github.com/bnosac/udpipe. 
+
 # Video tutorial
 
 Some of the features of this script are shown in this short video:
