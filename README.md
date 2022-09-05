@@ -32,7 +32,7 @@ Part of speech tagging is a mandatory input for Poisoned texts. That input would
 
 # Video tutorial
 
-Some of the features of this script are shown in this short video:
+Some of the features of Poisoned texts are shown in this short video:
 
 https://youtu.be/rPq5sKLoDb8
 
