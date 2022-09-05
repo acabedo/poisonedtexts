@@ -1,0 +1,163 @@
+---
+title: "Poisoned texts report"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+  word2_document:
+    toc: true
+    toc_depth: 2
+---
+
+![](poisoned-logo.png){width="151"}
+
+**Reference**: Cabedo, A. (2022) Poisoned texts. V.1.0 beta. Available at: <https://github.com/acabedo/poisonedtexts> 
+
+GNU General Public License v3.0 
+
+In this report you will find tables and charts covering the selected texts. Please, take into account that the interpretation it has not only one direction, and that this is a task for a specialist.
+
+# Summary
+
+In this section, there are two brief summaries. The first one shows the number of paragraphs, sentences and ngrams for each text file. The second one presents the quantity of ngrams shared more than once, just once between at least two files or even ngrams appearing only at one of the texts being analysed.
+
+The selected ngrams for the analysis were `r input$stringcoincidence`.
+
+## Basic info
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+library(markdown)
+library(knitr)
+kable(summarytable())
+
+```
+
+## Shared or genuine lexical items
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+kable(summarytable2())
+```
+
+## File by file coincidence
+
+```{r echo=FALSE, message=FALSE,warning=FALSE}
+
+knitr::kable(ngramscooc())
+```
+
+# Style
+
+This section covers several variables covering common styling characteristics for individuals. These variables must be selected previously on the app. Accordingly, they will be projected on a heatmap.
+
+The frequencies have been automatically scaled with a reference to 100 words, because every sentence has a different quantity of words. Furthermore, the variable *words* refers to the mean of words by sentence for every text.
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+
+knitr::kable(style())
+
+```
+
+## Heatmap
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+heatmap(treeres(), scale = "column",cexRow = 0.8,cexCol = 0.8)
+```
+
+## Most frequent words
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+
+# kable(annotation()%>%group_by(doc_id,token)%>%summarise(freq=n())%>%arrange(doc_id,desc(freq))%>%slice_head(n = 2))
+annotation <- annotation()%>%group_by(doc_id,sentence_id,sentence)%>%summarise(n())
+  p<- annotation %>%group_by(doc_id,sentence_id)%>% unnest_tokens(ngram,sentence,token="ngrams", n= 1)%>%group_by(doc_id,sentence_id,ngram)%>%summarise(freq=n())%>%filter(ngram!="")
+kable(p%>%ungroup()%>%group_by(doc_id)%>%filter(!(ngram%in%!!input$filtertoken))%>%arrange(doc_id,desc(freq))%>%select(-sentence_id)%>%slice_head(n=2))
+
+```
+
+## Most frequent words first position in sentence
+
+### Single words
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+kable(annotation()%>%filter(token_id==1,upos!="PUNCT")%>%group_by(doc_id, token)%>%summarise(freq=n())%>%arrange(doc_id,desc(freq))%>%slice_head(n = 2))
+```
+
+### Two first words
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+
+kable(annotation()%>%group_by(doc_id,sentence_id)%>%mutate(ngram=paste(token,lead(token,1)))%>%ungroup%>%filter(token_id==1,upos!="PUNCT")%>%group_by(doc_id, ngram)%>%summarise(freq=n())%>%arrange(doc_id,desc(freq))%>%slice_head(n = 2))
+
+```
+
+### Three first words
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+
+kable(annotation()%>%group_by(doc_id,sentence_id)%>%mutate(ngram=paste(token,lead(token,1),lead(token,2)))%>%ungroup%>%filter(token_id==1,upos!="PUNCT")%>%group_by(doc_id, ngram)%>%summarise(freq=n())%>%arrange(doc_id,desc(freq))%>%slice_head(n = 2))
+
+```
+
+### Four first words
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+
+kable(annotation()%>%group_by(doc_id,sentence_id)%>%mutate(ngram=paste(token,lead(token,1),lead(token,2),lead(token,3)))%>%ungroup%>%filter(token_id==1,upos!="PUNCT")%>%group_by(doc_id, ngram)%>%summarise(freq=n())%>%arrange(doc_id,desc(freq))%>%slice_head(n = 2))
+
+```
+
+## Most frequent upos first position in sentence
+
+### Single upos
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+kable(annotation()%>%filter(token_id==1)%>%group_by(doc_id, upos)%>%summarise(freq=n())%>%arrange(doc_id,desc(freq))%>%slice_head(n = 2))
+```
+
+### Two first upos
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+
+kable(annotation()%>%group_by(doc_id,sentence_id)%>%mutate(ngram=paste(upos,lead(upos,1)))%>%ungroup%>%filter(token_id==1)%>%group_by(doc_id, ngram)%>%summarise(freq=n())%>%arrange(doc_id,desc(freq))%>%slice_head(n = 2))
+
+```
+
+### Three first upos
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+
+kable(annotation()%>%group_by(doc_id,sentence_id)%>%mutate(ngram=paste(upos,lead(upos,1),lead(upos,2)))%>%ungroup%>%filter(token_id==1)%>%group_by(doc_id, ngram)%>%summarise(freq=n())%>%arrange(doc_id,desc(freq))%>%slice_head(n = 2))
+
+```
+
+### Four first upos
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+
+kable(annotation()%>%group_by(doc_id,sentence_id)%>%mutate(ngram=paste(upos,lead(upos,1),lead(upos,2),lead(upos,3)))%>%ungroup%>%filter(token_id==1)%>%group_by(doc_id, ngram)%>%summarise(freq=n())%>%arrange(doc_id,desc(freq))%>%slice_head(n = 2))
+
+```
+
+
+
+# Similar sentences
+
+This last section presents the common verbatim concordances for the coinciding *ngrams* among at least two texts.
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+
+if (is.null(input$ttablesel)){print("Please, select two filenames if you want this section to be available")}else {
+knitr::kable(sentencestable())}
+```
+
+# Annex (texts)
+
+In this section all the texts appear
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+
+
+p<- annotation()%>%group_by(doc_id,sentence_id)%>%summarise(freq=n(),sentence=max(sentence))%>%select(sentence,doc_id,sentence_id)%>%arrange(doc_id,sentence_id)%>%mutate(sentence_id=paste(doc_id,"_",sentence_id,": ",sentence,sep=""))%>%ungroup()%>%select(sentence_id)
+kable(p)
+```
+
