@@ -1,13 +1,22 @@
-
 <img src="images/poisoned-logo.png" alt="drawing" width="160"/> 
 
 # Brief description
 
-# Video tutorial 
+# Citation
+
+At this moment, you can reference Poisoned texts this way:
+
+Cabedo, A. (2022). Poisoned texts. v.1.0 (beta). Available at https://github.com/acabedo/poisonedtexts
+
+# Video tutorial
+
+Some of the features of this script are shown in this short video:
 
 https://youtu.be/rPq5sKLoDb8
 
 # Online demo
+
+An online version of Poisoned texts is available at https://adrin-cabedo.shinyapps.io/poisonedtexts/
 
 # Sample reports generated
 
@@ -103,6 +112,12 @@ Sievert C (2020). _Interactive Web-Based Data
 Visualization with R, plotly, and shiny_. Chapman
 and Hall/CRC. ISBN 9781138331457,
 <https://plotly-r.com>.
+
+# Screenshots
+
+# Inspirational work
+
+Poisoned texts, as a very basic verbatim plagiarism detection tool, follows some of the rules developed by David Wools in Copycatch, version from 2003. Furthermore, the kind of ngrams treatment developed by Laurence Anthony in Antconc was considered a good trick to find verbatim coincidence and similarity among texts. Finally, the heatmap usage was previously introduced in other text tools, like Oralstats [https://github.com/acabedo/oralstats] 
 
 # Caution
 
