@@ -12,7 +12,7 @@ I don't want to break these chains
 
 # Brief description
 
-Poisoned texts v.1.0 (beta) is a complete free app developed with R language, and launched on a Shiny web environment. The aim of this program is to check similarity among texts (two at least) measuring the coincidence of n-grams; the program pretends to help discourse analysts or even plagiarism detector experts to find verbatim coincidences between offline texts. These quantitative measurements, exportables to PDF, Docx or HTML, can be used as a beginning point for deeper, more fine-grained analysis, carried out by linguist specialists.
+Poisoned texts v.1.0 (beta) is a complete free app developed with R language, and launched on a Shiny web environment. The aim of this program is to check similarity among texts (two at least) measuring the coincidence of n-grams; the program pretends to help discourse analysts or even plagiarism detector experts finding verbatim coincidences between offline texts. These quantitative measurements, exportables to PDF, Docx or HTML, can be used as a beginning point for deeper, more fine-grained analysis, carried out by linguist specialists.
 
 In addition, taking the lexical and part of speech tagging information, there can be also observed common patterns for the authors of the texts (quantity of verbs, nouns, adjectives...), i.e. the style of the authors. Even on the finding of coincidences, this approach could let the expert decide if any of the authors checked could have better writing skills than the others. A heatmap chart, projecting at the same time the discourse styles of the multiple analyzed texts, improves the visualization.
 
