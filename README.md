@@ -1,5 +1,7 @@
 <img src="images/poisoned-logo.png" alt="drawing" width="160"/> 
 
+[![DOI](https://zenodo.org/badge/532443545.svg)](https://zenodo.org/badge/latestdoi/532443545)
+
 >I wanna love you but I better not touch (don't touch) |
 >I wanna hold you, but my senses tell me to stop |
 >I wanna kiss you but I want it too much (too much) |
